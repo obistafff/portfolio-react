@@ -13,22 +13,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION A PROPOS + COMPETENCES (on la fait juste après) */}
-      <section className="py-5">
+      {/* A PROPOS + COMPETENCES */}
+      <section>
         <div className="container">
           <div className="row g-4">
+            {/* A PROPOS */}
             <div className="col-12 col-lg-6">
-              <h3 className="border-bottom pb-2">A propos</h3>
+              <h3 className="section-title text-start">A propos</h3>
+
+              <img
+                src="/img/about.jpg"
+                alt="John Doe au travail"
+                className="img-fluid rounded mb-3"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus reiciendis impedit aut iure enim placeat? Natus, neque
+                at?
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus reiciendis impedit aut iure enim placeat? Natus, neque
+                at?
+              </p>
+
               <p className="mb-0">
-                (on colle ton contenu ici juste après)
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus reiciendis impedit aut iure enim placeat? Natus, neque
+                at?
               </p>
             </div>
 
+            {/* COMPETENCES */}
             <div className="col-12 col-lg-6">
-              <h3 className="border-bottom pb-2">Mes compétences</h3>
-              <p className="mb-0">
-                (progress bars Bootstrap juste après)
-              </p>
+              <h3 className="section-title text-start">Mes compétences</h3>
+
+              <p className="mb-1">HTML5 90%</p>
+              <div className="progress mb-3">
+                <div className="progress-bar bg-danger" style={{ width: "90%" }} />
+              </div>
+
+              <p className="mb-1">CSS3 80%</p>
+              <div className="progress mb-3">
+                <div className="progress-bar bg-info" style={{ width: "80%" }} />
+              </div>
+
+              <p className="mb-1">JavaScript 70%</p>
+              <div className="progress mb-3">
+                <div className="progress-bar bg-warning" style={{ width: "70%" }} />
+              </div>
+
+              <p className="mb-1">PHP 60%</p>
+              <div className="progress mb-3">
+                <div className="progress-bar bg-success" style={{ width: "60%" }} />
+              </div>
+
+              <p className="mb-1">React 50%</p>
+              <div className="progress">
+                <div className="progress-bar bg-primary" style={{ width: "50%" }} />
+              </div>
             </div>
           </div>
         </div>

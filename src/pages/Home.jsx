@@ -1,3 +1,5 @@
+import GithubModal from "../components/GithubModal";
+
 export default function Home() {
   return (
     <>
@@ -7,7 +9,12 @@ export default function Home() {
           <h1 className="display-4 fw-bold mb-2">Bonjour, je suis John Doe</h1>
           <h2 className="h3 fw-semibold mb-4">Développeur web full stack</h2>
 
-          <button type="button" className="btn btn-danger btn-lg">
+          <button
+            type="button"
+            className="btn btn-danger btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#githubModal"
+          >
             En savoir plus
           </button>
         </div>
@@ -81,6 +88,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ✅ MODALE GITHUB (OBLIGATOIRE ICI) */}
+      <GithubModal />
     </>
   );
 }

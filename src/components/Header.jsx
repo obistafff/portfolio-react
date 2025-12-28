@@ -1,23 +1,87 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav style={{ padding: 12, background: "black" }}>
-      <NavLink to="/" style={{ color: "white", marginRight: 12 }}>
-        ACCUEIL
-      </NavLink>
+    <header>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div className="container">
+          <NavLink className="navbar-brand" to="/">
+            JOHN DOE
+          </NavLink>
 
-      <NavLink to="/services" style={{ color: "white", marginRight: 12 }}>
-        SERVICES
-      </NavLink>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
 
-      <NavLink to="/realisations" style={{ color: "white", marginRight: 12 }}>
-        RÉALISATIONS
-      </NavLink>
+          <div className="collapse navbar-collapse" id="mainNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <NavLink
+                  to="/"
+                  end
+                  className={({ isActive }) =>
+                    "nav-link text-uppercase " + (isActive ? "active" : "")
+                  }
+                >
+                  Accueil
+                </NavLink>
+              </li>
 
-      <NavLink to="/contact" style={{ color: "white" }}>
-        CONTACT
-      </NavLink>
-    </nav>
-  )
+              <li className="nav-item">
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    "nav-link text-uppercase " + (isActive ? "active" : "")
+                  }
+                >
+                  Services
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
+                  to="/portfolio"
+                  className={({ isActive }) =>
+                    "nav-link text-uppercase " + (isActive ? "active" : "")
+                  }
+                >
+                  Réalisations
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    "nav-link text-uppercase " + (isActive ? "active" : "")
+                  }
+                >
+                  Contact
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
+                  to="/mentions-legales"
+                  className={({ isActive }) =>
+                    "nav-link text-uppercase " + (isActive ? "active" : "")
+                  }
+                >
+                  Mentions légales
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
 }

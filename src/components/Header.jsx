@@ -53,7 +53,7 @@ export default function Header() {
                     "nav-link text-uppercase " + (isActive ? "active" : "")
                   }
                 >
-                  Réalisations
+                  Portefolio
                 </NavLink>
               </li>
 

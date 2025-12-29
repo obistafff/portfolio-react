@@ -1,3 +1,4 @@
+// App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,7 +13,7 @@ export default function App() {
     <BrowserRouter>
       <Header />
 
-      <main style={{ paddingTop: "56px" }}>
+      <main className="app-main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />

@@ -38,4 +38,23 @@ Avant d’installer et de lancer le projet, assurez-vous d’avoir installé :
 
 1. Cloner le dépôt GitHub :
 ```bash
-git clone <URL_DU_DEPOT_GITHUB>
+git clone https://github.com/obistafff/portfolio-react.git
+
+```bash
+cd portfolio-react
+
+```bash
+npm install
+
+```bash
+npm run dev
+
+Le projet est ensuite accessible à l’adresse indiquée dans le terminal, généralement http://localhost:5173
+
+---
+
+## Validation W3C
+
+Les fichiers HTML du projet ont été validés via le validateur officiel du W3C.
+
+Des captures d’écran des validations sont disponibles dans le dossier `/w3c` à la racine du projet.

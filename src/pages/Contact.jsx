@@ -18,13 +18,14 @@ export default function Contact() {
             <div className="contact__underline" />
 
             <form className="contact__form">
-              <input type="text" placeholder="Votre nom" required />
-              <input type="email" placeholder="Votre adresse email" required />
-              <input type="tel" placeholder="Votre numéro de téléphone" />
-              <input type="text" placeholder="Sujet" />
-              <textarea placeholder="Votre message" rows="12" required />
-              <button type="submit">Envoyer</button>
+              <input className="form-control" type="text" placeholder="Votre nom" required />
+              <input className="form-control" type="email" placeholder="Votre adresse email" required />
+              <input className="form-control" type="tel" placeholder="Votre numéro de téléphone" required />
+              <input className="form-control" type="text" placeholder="Sujet" required />
+              <textarea className="form-control" placeholder="Votre message" rows="12" required />
+              <button className="btn btn-primary" type="submit">Envoyer</button>
             </form>
+
           </div>
 
           <div>

@@ -1,42 +1,44 @@
 export default function Portfolio() {
   const projects = [
-    {
-      title: "Fresh Food",
-      img: "/img/portfolio/fresh-food.jpg",
-      subtitle: "Site de vente de produits frais en ligne",
-      footer: "Site réalisé avec PHP et MySQL",
-    },
-    {
-      title: "Restaurant Akira",
-      img: "/img/portfolio/restaurant-akira.jpg",
-      subtitle: "Site de vente de produits frais en ligne",
-      footer: "Site réalisé avec WordPress",
-    },
-    {
-      title: "Espace bien-être",
-      img: "/img/portfolio/espace-bien-etre.jpg",
-      subtitle: "Site de vente de produits frais en ligne",
-      footer: "Site réalisé avec LARAVEL",
-    },
-    {
-      title: "SEO",
-      img: "/img/portfolio/seo.jpg",
-      subtitle: "Amélioration du référencement d'un site e-commerce",
-      footer: "Utilisation des outils SEO",
-    },
-    {
-      title: "Création d'une API",
-      img: "/img/portfolio/api.jpg",
-      subtitle: "Création d'une API RESTFULL publique",
-      footer: "PHP - SYMFONY",
-    },
-    {
-      title: "Maquette d'un site web",
-      img: "/img/portfolio/maquette.jpg",
-      subtitle: "Création du prototype d'un site",
-      footer: "Réalisé avec FIGMA",
-    },
-  ];
+  {
+    title: "Fresh Food",
+    img: "/img/portfolio/fresh-food.jpg",
+    subtitle: "Site de vente de produits frais en ligne",
+    footer: "Site réalisé avec PHP et MySQL",
+  },
+  {
+    title: "Restaurant Akira",
+    img: "/img/portfolio/restaurant-japonais.jpg",
+    subtitle: "Site de vente de produits frais en ligne",
+    footer: "Site réalisé avec WordPress",
+  },
+  {
+    title: "Espace bien-être",
+    img: "/img/portfolio/espace-bien-etre.jpg",
+    subtitle: "Site de vente de produits frais en ligne",
+    footer: "Site réalisé avec LARAVEL",
+  },
+  {
+    title: "SEO",
+    img: "/img/portfolio/seo.jpg",
+    subtitle: "Amélioration du référencement d’un site e-commerce",
+    footer: "Utilisation des outils SEO",
+  },
+  {
+    title: "Création d'une API",
+    img: "/img/portfolio/coder.jpg",
+    subtitle: "Création d’une API RESTFULL publique",
+    footer: "PHP – SYMFONY",
+  },
+  {
+    title: "Maquette d'un site web",
+    img: "/img/portfolio/screens.jpg",
+    subtitle: "Création du prototype d’un site",
+    footer: "Réalisé avec FIGMA",
+  },
+];
+
+
 
   return (
     <>
